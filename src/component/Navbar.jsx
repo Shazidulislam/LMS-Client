@@ -35,7 +35,7 @@ const Navbar = () => {
   const menuRef = useRef(null);
   const isLoggedIn = isSignedIn && Boolean(localStorage.getItem("token"));
 
-  const [isScrolled, useIsScrolled] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
   const [showNavbar, setShowNavbar] = useState(true);
 
   // collect token
@@ -57,8 +57,7 @@ const Navbar = () => {
     }
   }, [isSignedIn]);
 
-  
- // INSTANT token removal using Clerk logout event
+  // INSTANT token removal using Clerk logout event
   useEffect(() => {
     const handleLogout = () => {
       localStorage.removeItem("token");
@@ -72,20 +71,25 @@ const Navbar = () => {
   // Scroll hide/show
   useEffect(() => {
     const handleScroll = () => {
-      const scrollY = window.scrollY;
-      setIsScrolled(scrollY > 20);
+      setLastScrolly((prev) => {
+        const scrollY = window.scrollY;
 
-      if (scrollY > lastScrolly && scrollY > 100) {
-        setShowNavbar(false);
-      } else {
-        setShowNavbar(true);
-      }
-      setLastScrolly(scrollY);
+        setIsScrolled(scrollY > 20);
+
+        if (scrollY > prev && scrollY > 100) {
+          setShowNavbar(false);
+        } else {
+          setShowNavbar(true);
+        }
+
+        return scrollY;
+      });
     };
 
     window.addEventListener("scroll", handleScroll);
+
     return () => window.removeEventListener("scroll", handleScroll);
-  }, [lastScrolly]);
+  }, []);
 
   // Close menu on outside click
   useEffect(() => {
@@ -157,6 +161,7 @@ const Navbar = () => {
 
             {/* toggle */}
             <button
+              ref={menuRef}
               onClick={() => setIsOpen(!isOpen)}
               className={`lg:hidden p-2 rounded-md bg-white shadow-sm border border-gray-200 text-gray-600 hover:text-blue-600 hover:shadow-md transition-all duration-300 `}
             >

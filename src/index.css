@@ -1,1 +1,51 @@
+ @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+.font_cursive {
+    font-family: "Dancing Script", cursive;
+  }
 @import "tailwindcss";
+
+@keyframes floatUp {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes floatDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(20px);
+  }
+}
+
+.animate-float-up {
+  animation: floatUp 5s ease-in-out infinite;
+}
+
+.animate-float-down {
+  animation: floatDown 5s ease-in-out infinite;
+}
+
+@keyframes floatDiagonal {
+  0%,
+  100% {
+    transform: translate(0, 0);
+  }
+
+  50% {
+    transform: translate(-6px, -6px);
+  }
+}
+
+.animate-float-diagonal {
+  animation: floatDiagonal 3s ease-in-out infinite;
+}

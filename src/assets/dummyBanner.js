@@ -1,4 +1,4 @@
-export const floatingIcons = [
+export const floatingIcons1 = [
 {
 src: "https://cdn-icons-png.flaticon.com/512/5968/5968267.png",
 alt: "HTML",
@@ -9,7 +9,11 @@ src: "https://cdn-icons-png.flaticon.com/512/5968/5968242.png",
 alt: "CSS",
 pos: "top-[20%] right-[5%]",
 },
-{
+
+];
+
+export const floatingIcons2 = [
+    {
 src: "https://cdn-icons-png.flaticon.com/512/1183/1183672.png",
 alt: "React",
 pos: "top-[70%] left-[5%]",
@@ -19,7 +23,9 @@ src: "https://cdn-icons-png.flaticon.com/512/919/919853.png",
 alt: "Node.js",
 pos: "bottom-[10%] right-[5%]",
 },
-];
+]
+
+
 
 
 export const features = [
@@ -30,4 +36,4 @@ export const features = [
 ];
 
 
-export default { floatingIcons, features };
+export default { floatingIcons1,floatingIcons2, features };
