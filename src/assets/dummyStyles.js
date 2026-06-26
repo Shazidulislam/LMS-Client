@@ -1044,6 +1044,7 @@ export const testimonialStyles = {
   badgeText: "text-sm font-medium text-indigo-700",
   title: "text-3xl sm:text-4xl md:text-5xl font-bold font-[Montserrat] mb-3 sm:mb-6",
   titleGradient: "bg-clip-text text-transparent bg-gradient-to-r from-indigo-600 via-pink-500 to-purple-600",
+
   subtitle: "text-base sm:text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed",
   
   // Testimonials Grid
