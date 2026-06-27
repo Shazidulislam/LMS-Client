@@ -1,24 +1,24 @@
 export const socialIcons = [
 {
 name: 'Twitter',
-iconKey: 'Twitter',
+iconKey: 'CiTwitter',
 color: 'from-sky-400 to-blue-500',
 bgColor: 'bg-gradient-to-br from-sky-50 to-blue-100',
 url: 'https://x.com/HexagonDService?t=Vv5ReZAIbXONqkq_O0ksWQ&s=09'
 },
 {
 name: 'Instagram',
-iconKey: 'Instagram',
+iconKey: 'FaInstagram',
 color: 'from-pink-400 to-purple-500',
 bgColor: 'bg-gradient-to-br from-pink-50 to-purple-100',
-url: 'https://www.instagram.com/hexagondigitalservices?igsh=MWp2NG1oNTlibWVnZA%3D%3D'
+url: 'https://www.instagram.com/shazid_ul910/'
 },
 {
 name: 'LinkedIn',
-iconKey: 'Linkedin',
+iconKey: 'FiLinkedin',
 color: 'from-blue-500 to-blue-700',
 bgColor: 'bg-gradient-to-br from-blue-50 to-blue-100',
-url: 'https://www.linkedin.com/company/hexagondigtial-services/'
+url: 'https://www.linkedin.com/in/shazidulislam/'
 }
 ];
 
@@ -32,7 +32,7 @@ export const quickLinks = [
 
 
 export const supportLinks = [
-{ name: 'Help Center', href: '#', iconKey: 'HelpCircle' },
+{ name: 'Help Center', href: '#', iconKey: 'HeartHandshake' },
 { name: 'Privacy Policy', href: '#', iconKey: 'Shield' },
 { name: 'Terms of Service', href: '#', iconKey: 'FileText' },
 { name: 'FAQs', href: '#', iconKey: 'HelpCircle' }
@@ -42,9 +42,9 @@ export const supportLinks = [
 export const contactInfo = {
 addressLine1: '123 Triveni Nagar',
 city: 'Lucknow',
-phone: '+91 8299431275',
+phone: '+88 01605199098',
 phoneHours: 'Mon-Fri, 9AM-6PM',
-email: 'hexagonsservices@gmail.com',
+email: 'shazidulislam910@gmail.com',
 website: 'https://hexagondigitalservices.com',
 designBy: 'HexagonDigitalServices'
 };
