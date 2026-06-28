@@ -285,12 +285,12 @@ export const customStyles = `
 // src/assets/dummyStyles.js
 export const aboutUsStyles = {
   // Layout & Container
-  container: "min-h-screen bg-gradient-to-br from-blue-50 via-white to-indigo-50",
+  container: " bg-gradient-to-br from-blue-50 via-white to-indigo-50",
   
   // Hero Section
-  heroSection: "relative py-32 px-4 sm:px-6 lg:px-8 overflow-hidden",
+  heroSection: "relative h-[85vh] py-32 px-4 sm:px-6 lg:px-8 overflow-hidden flex items-center",
   heroBackground: "absolute inset-0 z-0",
-  heroImageContainer: "absolute inset-0 bg-cover bg-center transform scale-105",
+  heroImageContainer: "absolute inset-0 bg-cover bg-center bg-no-repeat",
   heroVignette: "absolute inset-0 pointer-events-none",
   heroTint: "absolute inset-0 bg-slate-900/30 mix-blend-multiply pointer-events-none",
   heroContent: "relative z-20 max-w-7xl mx-auto text-center",

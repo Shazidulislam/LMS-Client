@@ -5,7 +5,7 @@ import A4 from "../assets/A4.png"
 import AT1   from "../assets/AT1.png"
 import AT2 from "../assets/AT2.png"
 import AT3 from "../assets/AT3.png"
-
+import animetion from "../assets/ANIMETION1.png"
 
 
 import {
@@ -82,7 +82,7 @@ export const missionVisionValues = [
     subtitle: "Open Access Global Education",
     description:
       "To make high-quality education accessible and affordable for everyone, everywhere. We believe learning should have no boundaries.",
-    dotLottie: "https://lottie.host/d4aed205-8352-4490-a20a-83e4b3b3e2f6/f3nl34gaEN.lottie",
+    dotLottie: "https://lottie.host/f47c432c-d017-4b92-aab4-f0019955a298/ORAL4dTfBx.lottie",
     features: [
       "Accessible to all backgrounds",
       "Affordable pricing models",
@@ -99,7 +99,7 @@ export const missionVisionValues = [
     subtitle: "Shaping Future Leaders",
     description:
       "To create a world where anyone can learn, grow, and achieve their full potential through transformative educational experiences.",
-    dotLottie: "https://lottie.host/591f8a0f-faba-495a-9a38-ff1bf44b5fad/W30zLs2vep.lottie",
+    dotLottie: "https://lottie.host/5e102a54-6527-4932-8318-9563d6957cbf/dA9dI6mpg8.lottie",
     features: [
       "Lifelong learning journeys",
       "Future-ready skills",
@@ -116,7 +116,7 @@ export const missionVisionValues = [
     subtitle: "Principles That Guide Us",
     description:
       "Our core values shape every decision we make and define our commitment to students, instructors, and the global community.",
-    dotLottie: "https://lottie.host/4cf976d2-0a1a-4017-b021-c3fe2b0a4c18/ksM0OM58Dd.lottie",
+    dotLottie: "https://lottie.host/3a3b73b1-ac5c-4f59-91ab-6c9101fedede/Km5dtuiG1O.lottie",
     features: [
       "Student success first",
       "Excellence in teaching",

@@ -4,7 +4,7 @@ name: 'Twitter',
 iconKey: 'CiTwitter',
 color: 'from-sky-400 to-blue-500',
 bgColor: 'bg-gradient-to-br from-sky-50 to-blue-100',
-url: 'https://x.com/HexagonDService?t=Vv5ReZAIbXONqkq_O0ksWQ&s=09'
+url: 'https://x.com/AhasanShazid910'
 },
 {
 name: 'Instagram',
