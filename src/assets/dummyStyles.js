@@ -419,7 +419,7 @@ export const aboutUsAnimations = `
 export const contactStyles = {
   // Layout & Container
   container: "min-h-screen bg-gradient-to-br from-white to-gray-50 py-10 px-4 sm:px-6 md:px-10 lg:px-12 overflow-x-hidden",
-  mainContainer: "max-w-7xl mx-auto",
+  mainContainer: "max-w-5xl mx-auto",
   
   // Header
   header: "text-center mb-12 sm:mb-16",

@@ -5,7 +5,6 @@
 // import { counterTargets, missionVisionValues, statsMeta } from "../assets/dummyAbout";
 // import { DotLottieReact } from '@lottiefiles/dotlottie-react';
 
-
 // const AboutContent = () => {
 
 //     const [counterValues, setCounterValues] = useState({
@@ -61,7 +60,7 @@
 //     <div className={aboutUsStyles.container}>
 //       {/* HERO SECTION */}
 //       <section className={aboutUsStyles.heroSection}>
-        
+
 //         {/* Background Layer */}
 //         <div className={aboutUsStyles.heroBackground}>
 //           <div
@@ -89,7 +88,7 @@
 
 //         {/* Content Layer */}
 //         <div className={aboutUsStyles.heroContent}>
-          
+
 //           {/* Badge */}
 //           <div className={aboutUsStyles.trustBadge}>
 //             <Star className={aboutUsStyles.trustIcon} />
@@ -128,10 +127,10 @@
 //       </section>
 //       {/* {
 //         missionVisionValues.map((section ,i)=>(
-//           <section 
+//           <section
 //           key={i}
 //           className={`${aboutUsStyles.sectionContainer} ${section.bgColor} ${i%2 ===1 ? "bg-whiteS":""}`}
-//           > 
+//           >
 //           <div className={aboutUsStyles.sectionGrid} >
 //             <div className={`${aboutUsStyles.sectionContentGrid} ${i%2 ===1 ?"lg:grid-flow-dense":""} `} >
 //               <div className={`${aboutUsStyles.sectionImageContainer} ${i%2===1?"lg:col-start-2":""}`} >
@@ -151,7 +150,7 @@
 //       className={`${aboutUsStyles.sectionContainer} ${section.bgColor}`}
 //     >
 //       <div className={aboutUsStyles.sectionGrid}>
-        
+
 //         <div
 //           className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${
 //             i % 2 === 1 ? "lg:grid-flow-dense" : ""
@@ -171,7 +170,7 @@
 
 //           {/* Content */}
 //           <div className="space-y-5">
-            
+
 //             <h2 className="text-4xl font-bold text-gray-900">
 //               {section.title}
 //             </h2>
@@ -211,8 +210,14 @@
 import React, { useEffect, useState } from "react";
 import { aboutUsStyles } from "../assets/dummyStyles";
 import aboutBanner from "../assets/AboutBannerImage.png";
-import { Star, CheckCircle } from "lucide-react";
-import { counterTargets, missionVisionValues, statsMeta } from "../assets/dummyAbout";
+import { Star, CheckCircle, ShieldUser } from "lucide-react";
+import {
+  counterTargets,
+  missionVisionValues,
+  statsMeta,
+  testimonials,
+  values,
+} from "../assets/dummyAbout";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 
 const AboutContent = () => {
@@ -297,13 +302,17 @@ const AboutContent = () => {
 
           <p className={aboutUsStyles.subHeading}>
             Empowering millions to achieve dreams through
-            <span className={aboutUsStyles.inlineHighlight}>accessible education</span>
+            <span className={aboutUsStyles.inlineHighlight}>
+              accessible education
+            </span>
           </p>
 
           <div className={aboutUsStyles.statsGrid}>
             {statsMeta.slice(0, 4).map((stat, i) => (
               <div key={i} className={aboutUsStyles.statCard}>
-                <div className={aboutUsStyles.statNumber}>{formatStatNumber(stat.key)}</div>
+                <div className={aboutUsStyles.statNumber}>
+                  {formatStatNumber(stat.key)}
+                </div>
                 <div className={aboutUsStyles.statLabel}>{stat.label}</div>
               </div>
             ))}
@@ -334,9 +343,7 @@ const AboutContent = () => {
                   }`}
                 >
                   <div className={aboutUsStyles.sectionImage}>
-                    <DotLottieReact src={section.dotLottie} loop autoplay
-                   
-                    />
+                    <DotLottieReact src={section.dotLottie} loop autoplay />
                   </div>
                 </div>
 
@@ -358,7 +365,9 @@ const AboutContent = () => {
                   </div>
 
                   {/* Title */}
-                  <h2 className={aboutUsStyles.sectionTitle}>{section.title}</h2>
+                  <h2 className={aboutUsStyles.sectionTitle}>
+                    {section.title}
+                  </h2>
 
                   {/* Description */}
                   <p className={aboutUsStyles.sectionDescription}>
@@ -372,9 +381,13 @@ const AboutContent = () => {
                         <div
                           className={`${aboutUsStyles.featureIcon} ${section.color}`}
                         >
-                          <CheckCircle className={aboutUsStyles.featureIconSvg} />
+                          <CheckCircle
+                            className={aboutUsStyles.featureIconSvg}
+                          />
                         </div>
-                        <span className={aboutUsStyles.featureText}>{feature}</span>
+                        <span className={aboutUsStyles.featureText}>
+                          {feature}
+                        </span>
                       </div>
                     ))}
                   </div>
@@ -384,6 +397,67 @@ const AboutContent = () => {
           </section>
         );
       })}
+
+      {/* Enhanced Values Principles Section */}
+      <section className={aboutUsStyles.valuesSection}>
+        <div className={aboutUsStyles.sectionGrid}>
+          <div className={aboutUsStyles.valuesHeader}>
+            <div className={aboutUsStyles.valuesBadge}>
+              <ShieldUser className={aboutUsStyles.valuesBadgeIcon} />
+              <span className={aboutUsStyles.valuesBadgeText}>
+                Our Guiding Principles
+              </span>
+            </div>
+            <h2 className={aboutUsStyles.valuesTitle}>
+              Core Values That Define Us
+            </h2>
+            <p className={aboutUsStyles.valuesSubtitle}>
+              The foundation of everything we do at LearnHub
+            </p>
+          </div>
+
+          <div className={aboutUsStyles.valuesGrid}>
+            {values.map((value, index) => (
+              <div key={index} className={aboutUsStyles.valueCard}>
+                <div
+                  className={`${aboutUsStyles.valueGradient} ${value.color}`}
+                ></div>
+
+                <h3
+                  className={aboutUsStyles.valueCardTitle}
+                  title={value.title}
+                >
+                  {value.title}
+                </h3>
+
+                <p className={aboutUsStyles.valueCardDescription}>
+                  {value.description}
+                </p>
+
+                <ul className={aboutUsStyles.valueFeatures}>
+                  {value.features.map((feature, featureIndex) => (
+                    <li
+                      key={featureIndex}
+                      className={aboutUsStyles.valueFeatureItem}
+                    >
+                      <div
+                        className={`${aboutUsStyles.valueFeatureDot} ${value.color}`}
+                      ></div>
+                      {feature}
+                    </li>
+                  ))}
+                </ul>
+
+                <div
+                  className={`${aboutUsStyles.valueUnderline} ${value.color}`}
+                ></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+   
     </div>
   );
 };
