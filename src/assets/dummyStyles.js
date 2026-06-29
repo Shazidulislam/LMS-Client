@@ -429,7 +429,7 @@ export const contactStyles = {
   mainSection: "grid grid-cols-1 font-serif lg:grid-cols-2 md:grid-cols-2 md:gap-2 gap-10 lg:gap-12 items-center",
   
   // Contact Form
-  formContainer: "relative order-2 lg:order-1",
+  formContainer: "relative  order-2 lg:order-1",
   formGlow1: "absolute -inset-1 bg-gradient-to-r from-purple-300 to-blue-500 rounded-2xl opacity-75 blur-sm animate-pulse",
   formGlow2: "absolute -inset-1 bg-gradient-to-r from-purple-300 to-blue-500 rounded-2xl opacity-50 animate-pulse delay-75",
   formGlow3: "absolute -inset-1 bg-gradient-to-r from-purple-300 to-blue-500 rounded-2xl opacity-25 animate-pulse delay-150",

@@ -254,6 +254,7 @@ import { contactStyles } from "../../assets/dummyStyles";
 import { DotLottieReact } from "@lottiefiles/dotlottie-react";
 import {
   Mailbox,
+  MessageCircle,
   MessageCircleDashed,
   MessageSquare,
   Phone,
@@ -282,7 +283,7 @@ const ContactPage = () => {
       `Subject: ${data.subject}%0A` +
       `Message: ${data.message}`;
 
-    const whatsappUrl = `https://wa.me/01617268723?text=${whatsappMessage}`;
+    const whatsappUrl = `https://wa.me/8801605199098?text=${whatsappMessage}`;
     window.open(whatsappUrl, "_blank");
 
     setTimeout(() => {
@@ -299,7 +300,7 @@ const ContactPage = () => {
           <h1 className={contactStyles.title}>Contact Us</h1>
         </div>
 
-        <div className={contactStyles.mainContainer}>
+        <div className={contactStyles.mainSection}>
           <div className={contactStyles.formContainer}>
             <div className={contactStyles.formGlow1}></div>
             <div className={contactStyles.formGlow3}></div>
@@ -490,6 +491,15 @@ const ContactPage = () => {
                 }}
               />
             </div>
+          </div>
+        </div>
+        {/* footer info */}
+        <div className={contactStyles.footer} >
+          <div className={contactStyles.footerBadge} >
+            <MessageCircle className={contactStyles.footerIcon}/>
+            <span className={contactStyles.footerText} >
+              All message are sent directly to whatsApp for immediat response
+            </span>
           </div>
         </div>
       </div>
